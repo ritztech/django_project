@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div  align="center">
+<h1>  welcomc eto new pahe called in newapp</h1>
+
+<form  action="addnumber" method="post">
+    {% csrf_token %}
+
+    Enter num1 <input type="text"  name = "num1"/> <br>
+    Enter num2 <input type="text" name = "num2"   /> <br>
+<input type="submit" >
+
+
+</form>
+
+</div>
+
+{% endblock %}
